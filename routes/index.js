@@ -2,7 +2,8 @@ var express = require("express");
 var router = express.Router();
 var axios = require("axios");
 var app = express();
-
+const fs = require("fs");
+("use strict");
 router.get("/all/:country/:city/:date", function (req, res, next) {
   var country = req.params.country;
   var city = req.params.city;
